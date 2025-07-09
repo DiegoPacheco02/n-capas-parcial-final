@@ -75,3 +75,22 @@ INSERT INTO usuarios (correo, nombre, nombre_rol, password)
 VALUES ('admin@uca.edu.sv','Administrador', 'USER','$2a$14$ZhDx1UNei/eR4a/XbrvYLu8cxArIec9jF.IeMk4ucqpjy24uimnp6');
 ```
 **Donde la contraseña es:** `admin123`
+
+#### Capturas de pantalla
+Inicio de sesión con usuario tipo USER
+![image](https://github.com/user-attachments/assets/35a97da1-5083-4f26-a04f-d6748c4c8c41)
+
+Inicio de sesión fallido por credenciales incorrectas
+![image](https://github.com/user-attachments/assets/33223e30-bad7-475e-835b-fcbc1a4b29cc)
+
+Registrando un nuevo ticket con el token obtenido anteriormente
+![image](https://github.com/user-attachments/assets/00ab8ca7-69ec-4d9e-819a-d96bd4589797)
+
+Tratando de obtener todos los tickets con el JWT de tipo USER
+![image](https://github.com/user-attachments/assets/3acff316-c154-4a06-ae97-77f8a6cb321c)
+
+Iniciando sesión con un usuario del tipo TECH
+![image](https://github.com/user-attachments/assets/1db14156-0770-4a3e-a7a5-b33f580ebe57)
+
+Obteniendo el listado de tickets con el JWT del tipo TECH creado anteriormente
+![image](https://github.com/user-attachments/assets/206ce964-daa8-4b54-bfb3-069bb67f22e2)
