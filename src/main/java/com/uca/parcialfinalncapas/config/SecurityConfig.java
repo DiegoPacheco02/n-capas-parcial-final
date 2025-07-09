@@ -43,11 +43,24 @@ public class SecurityConfig {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/auth/**").permitAll()
+<<<<<<< HEAD
                         .requestMatchers("/api/users").hasAuthority("USER")
                         .requestMatchers(HttpMethod.POST, "/api/tickets").hasAuthority("USER")
                         .requestMatchers(HttpMethod.GET, "/api/tickets").hasAuthority("TECH")
                         .requestMatchers(HttpMethod.GET, "/api/tickets/**").hasAnyAuthority("USER", "TECH")
                         .requestMatchers(HttpMethod.PUT, "/api/tickets/**").hasAuthority("TECH")
+=======
+                        .requestMatchers(HttpMethod.GET, "/api/users").hasAnyAuthority("USER")
+                        .requestMatchers(HttpMethod.POST, "/api/users").hasAnyAuthority("USER")
+                        .requestMatchers(HttpMethod.PUT, "/api/users").hasAnyAuthority("USER")
+                        .requestMatchers(HttpMethod.DELETE, "/api/users/**").hasAnyAuthority("USER")
+                        .requestMatchers("/api/users/**").hasAuthority("USER")
+
+                        .requestMatchers(HttpMethod.POST, "/api/tickets").hasAuthority("USER")
+                        .requestMatchers(HttpMethod.GET, "/api/tickets").hasAuthority("TECH")
+                        .requestMatchers(HttpMethod.GET, "/api/tickets/**").hasAnyAuthority("USER", "TECH")
+                        .requestMatchers(HttpMethod.PUT, "/api/tickets").hasAuthority("TECH")
+>>>>>>> 7a4138c31fd885ca68894cc1b9202fcd8f3cf466
                         .requestMatchers(HttpMethod.DELETE, "/api/tickets/**").hasAuthority("USER")
                         .anyRequest().authenticated()
                 )

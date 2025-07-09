@@ -65,3 +65,13 @@ _Si van a crear mas endpoints como el login o registrarse recuerden actualizar p
 - [ ] Probar todos los flujos con Postman/Insomnia/Bruno.
 - [ ] Mostrar que los roles se comportan correctamente.
 - [ ] Incluir usuarios de prueba (`user`, `tech`) y contraseñas.
+
+#### Indicaciones para pruebas
+Se modificó la colección de postman original para agregar las peticiones relacionadas a la autentificación.
+
+Para hacer uso de los endpoints, es necesario crear un usuario desde la base de datos, para posteriormente ingresar los demás usuarios con los respectivos endpoints. El script del insert es el siguiente
+```sql
+INSERT INTO usuarios (correo, nombre, nombre_rol, password) 
+VALUES ('admin@uca.edu.sv','Administrador', 'USER','$2a$14$ZhDx1UNei/eR4a/XbrvYLu8cxArIec9jF.IeMk4ucqpjy24uimnp6');
+```
+**Donde la contraseña es:** `admin123`
