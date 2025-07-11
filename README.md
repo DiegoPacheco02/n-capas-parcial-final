@@ -66,7 +66,7 @@ _Si van a crear mas endpoints como el login o registrarse recuerden actualizar p
 - [ ] Mostrar que los roles se comportan correctamente.
 - [ ] Incluir usuarios de prueba (`user`, `tech`) y contraseñas.
 
-#### Indicaciones para pruebas
+### Indicaciones para pruebas
 Se modificó la colección de postman original para agregar las peticiones relacionadas a la autentificación.
 
 Para hacer uso de los endpoints, es necesario crear un usuario desde la base de datos, para posteriormente ingresar los demás usuarios con los respectivos endpoints. El script del insert es el siguiente
@@ -76,7 +76,7 @@ VALUES ('admin@uca.edu.sv','Administrador', 'USER','$2a$14$ZhDx1UNei/eR4a/XbrvYL
 ```
 **Donde la contraseña es:** `admin123`
 
-#### Capturas de pantalla
+### Capturas de pantalla
 Inicio de sesión con usuario tipo USER
 ![image](https://github.com/user-attachments/assets/35a97da1-5083-4f26-a04f-d6748c4c8c41)
 
