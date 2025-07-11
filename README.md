@@ -66,6 +66,10 @@ _Si van a crear mas endpoints como el login o registrarse recuerden actualizar p
 - [ ] Mostrar que los roles se comportan correctamente.
 - [ ] Incluir usuarios de prueba (`user`, `tech`) y contraseñas.
 
+### Instrucciones para ejecutar el proyecto con Docker
+
+[Docker Setup para API Spring Boot](https://github.com/DiegoPacheco02/n-capas-parcial-final/blob/main/README-Docker.md)
+
 ### Indicaciones para pruebas
 Se modificó la colección de postman original para agregar las peticiones relacionadas a la autentificación.
 
